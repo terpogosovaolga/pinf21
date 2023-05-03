@@ -12,6 +12,7 @@ function Filters({categories, activeIndex}) {
                         categories.map((cat, i) => <span key={i} className={activeSpan == i ? "active" : ""} onClick={() => setActiveSpan(i)}>{cat.toUpperCase()}</span>)
                     }
                 </div>
+                {/* {Sort(["по количеству мест", "по популярности", "по дате", "по цене"])} */}
                 <Sort sorts={["по количеству мест", "по популярности", "по дате", "по цене"]}/>
             </div>
     );
